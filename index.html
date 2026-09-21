@@ -1,78 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos</title>
-    <h1>Proyectos Tecnica 35</h1>
-    <div class="tarjeta">
-        <h2>Col-Fi</h2>
-        <p>descripción</p>
-        <a href="" target="_blank" class="boton">Infografías</a>
-        <a href="" target="_blank" class="boton">Documentación</a>
-        <a href="" target="_blank" class="boton">GitHub</a>
-        <a href="https://www.youtube.com/@proyecto-colfi" target="_blank" class="boton">Video</a>
-        
-    </div>
-     <div class="tarjeta">
-        <h2>Proyectos en c</h2>
-        <p>descripción</p>
-        <a href="" target="_blank" class="boton">Infografías</a>
-        <a href="" target="_blank" class="boton">Documentación</a>
-        <a href="" target="_blank" class="boton">GitHub</a>
-        <a href="" target="_blank" class="boton">Video</a>
-    </div> 
-    <div class="tarjeta">
-        <h2>San telmo verde</h2>
-        <p>descripción</p>
-        <a href="" target="_blank" class="boton">Infografías</a>
-        <a href="" target="_blank" class="boton">Documentación</a>
-        <a href="" target="_blank" class="boton">GitHub</a>
-        <a href="" target="_blank" class="boton">Video</a>
-    </div>
-     <div class="tarjeta">
-        <h2>Libritos</h2>
-        <p>descripción</p>
-        <a href="" target="_blank" class="boton">Infografías</a>
-        <a href="" target="_blank" class="boton">Documentación</a>
-        <a href="" target="_blank" class="boton">GitHub</a>
-        <a href="" target="_blank" class="boton">Video</a>
-    </div>
-     <div class="tarjeta">
-        <h2>Oso Polar</h2>
-        <p>descripción</p>
-        <a href="" target="_blank" class="boton">Infografías</a>
-        <a href="" target="_blank" class="boton">Documentación</a>
-        <a href="" target="_blank" class="boton">GitHub</a>
-        <a href="" target="_blank" class="boton">Video</a>
-    </div>
-     <div class="tarjeta">
-        <h2>Estiliza tu vida</h2>
-        <p>descripción</p>
-        <a href="" target="_blank" class="boton">Infografías</a>
-        <a href="" target="_blank" class="boton">Documentación</a>
-        <a href="" target="_blank" class="boton">GitHub</a>
-        <a href="" target="_blank" class="boton">Video</a>
-    </div>
-     <div class="tarjeta">
-        <h2>Nuestra cantina</h2>
-        <p>descripción</p>
-        <a href="" target="_blank" class="boton">Infografías</a>
-        <a href="" target="_blank" class="boton">Documentación</a>
-        <a href="" target="_blank" class="boton">GitHub</a>
-        <a href="" target="_blank" class="boton">Video</a>
-    </div>
-     <div class="tarjeta">
-        <h2>El Archipielago</h2>
-        <p>descripción</p>
-        <a href="" target="_blank" class="boton">Infografías</a>
-        <a href="" target="_blank" class="boton">Documentación</a>
-        <a href="" target="_blank" class="boton">GitHub</a>
-        <a href="" target="_blank" class="boton">Video</a>
-    </div>
+
+    <title>Proyectos ET 35</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <header>
+        <h1>PROYECTOS TECNICA 35</h1>
+    </header>
+
+    <main id="inicio">
+
+        <div class="proyectos">
+
+            <div class="proyecto" onclick="abrirProyecto('COL-FI')">
+                <h2>COL-FI</h2>
+                <p>descripcion</p>
+            </div>
+
+            <div class="proyecto" onclick="abrirProyecto('EL ARCHIPIÉLAGO')">
+                <h2>EL ARCHIPIÉLAGO</h2>
+                <p>descripcion</p>
+            </div>
+
+            <div class="proyecto" onclick="abrirProyecto('ESTILIZA TU VIDA')">
+                <h2>ESTILIZA TU VIDA</h2>
+                <p>descripcion</p>
+            </div>
+
+            <div class="proyecto" onclick="abrirProyecto('LIBRITOS')">
+                <h2>LIBRITOS</h2>
+                <p>descripcion</p>
+            </div>
+
+            <div class="proyecto" onclick="abrirProyecto('NUESTRA CANTINA')">
+                <h2>NUESTRA CANTINA</h2>
+                <p>descripcion</p>
+            </div>
+
+            <div class="proyecto" onclick="abrirProyecto('OSO POLAR')">
+                <h2>OSO POLAR</h2>
+                <p>descripcion</p>
+            </div>
+
+            <div class="proyecto" onclick="abrirProyecto('PROYECTOS EN C')">
+                <h2>PROYECTOS EN C</h2>
+                <p>descripcion</p>
+            </div>
+            <div class="proyecto" onclick="abrirProyecto('SAN TELMO VERDE')">
+                <h2>SAN TELMO VERDE</h2>
+                <p>descripcion</p>
+            </div>
+        </div>
+    </main>
+    <!-- PÁGINA DEL PROYECTO -->
+    <section id="detalle" class="oculto">
+        <button onclick="volver()">← VOLVER</button>
+        <h1 id="tituloProyecto"></h1>
+        <!-- DESCRIPCIÓN (IMPORTANTE PARA JS) -->
+        <p id="descripcionProyecto"></p>
+        <!-- BOTONES DINÁMICOS -->
+        <div class="recursos">
+            <div class="recurso">
+                <div class="botones" id="botones-proyecto">
+                    <!-- JS los carga acá -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
 </body>
-<script src = "main.js"></script>
 </html>
