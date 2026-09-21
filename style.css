@@ -1,0 +1,178 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+
+    background: linear-gradient(120deg, #f4f0e8, #ffd6e0, #d6f0ff, #f4f0e8);
+    background-size: 300% 300%;
+    animation: movebg 12s ease infinite;
+}
+
+@keyframes movebg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+ 
+header {  
+    align-items: center;
+    width: 90%;  
+    margin: auto;  
+    padding: 20px;  
+    border-left: 8px solid #e44c82;  
+    background-color: rgba(255,255,255,0.5);  
+}  
+ 
+header h1 {  
+    align-items: center; 
+    color: #a52c68;  
+    font-size: 45px;  
+    letter-spacing: 2px;  
+}  
+ 
+header p {  
+    margin-top: 5px;  
+    color: #555;  
+}  
+ 
+.proyectos {  
+    width: 90%;  
+    margin: 40px auto;  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 35px;  
+}  
+ 
+.proyecto {  
+    background-color: #0aa0ba;  
+    min-height: 160px;  
+    padding: 30px;  
+    display: flex;  
+    align-items: center;  
+    cursor: pointer;  
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.12);  
+    transition: 0.2s;  
+    flex-direction: column;  
+    justify-content: center;  
+    text-align: center;  
+    gap: 10px;
+}  
+ 
+.proyecto:hover {  
+    transform: translateY(-7px) rotate(-1deg);  
+    box-shadow: 12px 13px 0px rgba(0,0,0,0.15);  
+}  
+ 
+.proyecto h2 {  
+    font-family: "Comic Sans MS", cursive;  
+    font-size: 28px;  
+    color: #111;  
+    text-transform: uppercase;  
+}  
+ 
+.proyecto p {  
+    font-size: 13px;  
+    color: #111;  
+}  
+ 
+.proyecto:nth-child(2) {  
+    transform: rotate(1deg);  
+}  
+ 
+.proyecto:nth-child(3) {  
+    transform: rotate(-1deg);  
+}  
+ 
+.proyecto:nth-child(5) {  
+    transform: rotate(1deg);  
+}  
+ 
+.proyecto:nth-child(7) {  
+    transform: rotate(-1deg);  
+}  
+ 
+#detalle {  
+    width: 90%;  
+    margin: auto;  
+}  
+ 
+.oculto {  
+    display: none;  
+}  
+ 
+#detalle > button {  
+    background-color: #e44c82;  
+    border: none;  
+    color: white;  
+    padding: 12px 20px;  
+    font-weight: bold;  
+    cursor: pointer;  
+    margin-bottom: 30px;  
+}  
+ 
+#detalle > button:hover {  
+    background-color: #c7366b;  
+}  
+ 
+#tituloProyecto {  
+    font-family: "Comic Sans MS", cursive;  
+    font-size: 45px;  
+    margin-bottom: 30px;  
+    text-transform: uppercase;  
+}  
+ 
+/* 🔥 DESCRIPCIÓN */ 
+#descripcionProyecto { 
+    width: 70%; 
+    margin: 20px auto 30px auto; 
+    font-size: 16px; 
+    color: #333; 
+    background-color: rgba(255,255,255,0.7); 
+    padding: 15px 20px; 
+    border-left: 6px solid #e44c82; 
+    line-height: 1.5; 
+} 
+ 
+/* 🔥 BOTONES (ARREGLADO PARA LINKS DINÁMICOS) */ 
+.botones {  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    gap: 10px; 
+    margin-top: 20px;
+}  
+ 
+.botones a {  
+    border: none;  
+    padding: 15px 20px;  
+    font-size: 14px;  
+    font-weight: bold;  
+    cursor: pointer;  
+    border-radius: 8px; 
+    transition: 0.2s; 
+    text-decoration: none;
+    width: 220px;
+    text-align: center;
+    color: white;
+} 
+ 
+.github {  
+    background-color: #b6dc55;  
+}  
+.documentacion {  
+    background-color: #f2d75c;  
+    color: black;
+}  
+ 
+.infografias {  
+    background-color: #e44c82;  
+    color: white;  
+}  
+ 
+.videos {  
+    background-color: #efb343;  
+}  
