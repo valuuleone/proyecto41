@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Proyectos ET 35</title>
+    <title>Proyectos Técnica 35</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,69 +13,151 @@
 <body>
 
     <header>
-        <h1>PROYECTOS TECNICA 35</h1>
+        <h1>PROYECTOS TÉCNICA 35</h1>
+        <p>Conocé los proyectos de nuestros alumnos</p>
     </header>
 
     <main id="inicio">
 
-        <div class="proyectos">
+        <section class="contenedor-carrusel">
 
-            <div class="proyecto" onclick="abrirProyecto('COL-FI')">
-                <h2>COL-FI</h2>
-                <p>descripcion</p>
-            </div>
+            <button class="flecha izquierda" onclick="anteriorProyecto()">
+                ❮
+            </button>
 
-            <div class="proyecto" onclick="abrirProyecto('EL ARCHIPIÉLAGO')">
-                <h2>EL ARCHIPIÉLAGO</h2>
-                <p>descripcion</p>
-            </div>
+            <div class="carrusel" id="carrusel">
 
-            <div class="proyecto" onclick="abrirProyecto('ESTILIZA TU VIDA')">
-                <h2>ESTILIZA TU VIDA</h2>
-                <p>descripcion</p>
-            </div>
+                <div class="proyecto" onclick="seleccionarProyecto(0)">
+                    <div class="imagen-proyecto colfi">
+                        <img src="colfi.jpg" alt="COL-FI">
+                    </div>
 
-            <div class="proyecto" onclick="abrirProyecto('LIBRITOS')">
-                <h2>LIBRITOS</h2>
-                <p>descripcion</p>
-            </div>
-
-            <div class="proyecto" onclick="abrirProyecto('NUESTRA CANTINA')">
-                <h2>NUESTRA CANTINA</h2>
-                <p>descripcion</p>
-            </div>
-
-            <div class="proyecto" onclick="abrirProyecto('OSO POLAR')">
-                <h2>OSO POLAR</h2>
-                <p>descripcion</p>
-            </div>
-
-            <div class="proyecto" onclick="abrirProyecto('PROYECTOS EN C')">
-                <h2>PROYECTOS EN C</h2>
-                <p>descripcion</p>
-            </div>
-            <div class="proyecto" onclick="abrirProyecto('SAN TELMO VERDE')">
-                <h2>SAN TELMO VERDE</h2>
-                <p>descripcion</p>
-            </div>
-        </div>
-    </main>
-    <!-- PÁGINA DEL PROYECTO -->
-    <section id="detalle" class="oculto">
-        <button onclick="volver()">← VOLVER</button>
-        <h1 id="tituloProyecto"></h1>
-        <!-- DESCRIPCIÓN (IMPORTANTE PARA JS) -->
-        <p id="descripcionProyecto"></p>
-        <!-- BOTONES DINÁMICOS -->
-        <div class="recursos">
-            <div class="recurso">
-                <div class="botones" id="botones-proyecto">
-                    <!-- JS los carga acá -->
+                    <div class="contenido-proyecto">
+                        <h2>COL-FI</h2>
+                        <p>Lucas Marin,Thiago Grillo,Yago Sayas,Ciro Lopez,Thiago Puga.</p>
+                    </div>
                 </div>
+
+                <div class="proyecto" onclick="seleccionarProyecto(1)">
+                    <div class="imagen-proyecto archipielago">
+                       <img src="" alt="EL ARCHIPIELAGO">
+                    </div>
+
+                    <div class="contenido-proyecto">
+                        <h2>EL ARCHIPIÉLAGO</h2>
+                        <p>Thiago Campobello,Pia Machado,Carolina occiato,Joaquin Espinar.</p>
+                    </div>
+                </div>
+
+                <div class="proyecto" onclick="seleccionarProyecto(2)">
+                    <div class="imagen-proyecto estiliza">
+                        <span>ESTILIZA</span>
+                    </div>
+
+                    <div class="contenido-proyecto">
+                        <h2>ESTILIZA TU VIDA</h2>
+                        <p>Luzmila Bayon.</p>
+                    </div>
+                </div>
+
+                <div class="proyecto" onclick="seleccionarProyecto(3)">
+                    <div class="imagen-proyecto libritos">
+                        <span>LIBRITOS</span>
+                    </div>
+
+                    <div class="contenido-proyecto">
+                        <h2>LIBRITOS</h2>
+                        <p>Lautaro Alari,Mateo chaumont,Matias Orsi.</p>
+                    </div>
+                </div>
+
+                <div class="proyecto" onclick="seleccionarProyecto(4)">
+                    <div class="imagen-proyecto cantina">
+                        <span>NUESTRA CANTINA</span>
+                    </div>
+
+                    <div class="contenido-proyecto">
+                        <h2>NUESTRA CANTINA</h2>
+                        <p>Facundo Gasparini,Nahuel Ballario,Jade Alessio,Valentino Russo</p>
+                    </div>
+                </div>
+
+                <div class="proyecto" onclick="seleccionarProyecto(5)">
+                    <div class="imagen-proyecto oso">
+                        <span>OSO POLAR</span>
+                    </div>
+
+                    <div class="contenido-proyecto">
+                        <h2>OSO POLAR</h2>
+                        <p>Cambio climático y ambiente.</p>
+                    </div>
+                </div>
+
+                <div class="proyecto" onclick="seleccionarProyecto(6)">
+                    <div class="imagen-proyecto c">
+                        <span>C</span>
+                    </div>
+
+                    <div class="contenido-proyecto">
+                        <h2>PROYECTOS EN C</h2>
+                        <p>Programas realizados en C.</p>
+                    </div>
+                </div>
+
+                <div class="proyecto" onclick="seleccionarProyecto(7)">
+                    <div class="imagen-proyecto san-telmo">
+                        <span>SAN TELMO</span>
+                    </div>
+
+                    <div class="contenido-proyecto">
+                        <h2>SAN TELMO VERDE</h2>
+                        <p>Sustentabilidad y espacios verdes.</p>
+                    </div>
+                </div>
+
             </div>
+
+            <button class="flecha derecha" onclick="siguienteProyecto()">
+                ❯
+            </button>
+
+        </section>
+
+        <div class="indicadores" id="indicadores"></div>
+
+    </main>
+
+
+    <!-- PÁGINA DEL PROYECTO -->
+
+    <section id="detalle" class="oculto">
+
+        <button class="volver" onclick="volver()">
+            ← VOLVER A PROYECTOS
+        </button>
+
+        <div class="detalle-contenido">
+
+            <h1 id="tituloProyecto"></h1>
+
+            <p id="descripcionProyecto"></p>
+
+            <div class="recursos">
+
+                <h2>RECURSOS DEL PROYECTO</h2>
+
+                <div class="botones" id="botones-proyecto">
+                </div>
+
+            </div>
+
         </div>
 
     </section>
+
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
