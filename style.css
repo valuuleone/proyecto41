@@ -151,45 +151,37 @@ header p {
     text-shadow:
         0 2px 8px black;
 }
-
+/*
 .colfi {
-    background:
-        linear-gradient(135deg, #0c8f9f, #123e57);
+agregar estilos a la imagen.
 }
-
+*/
 .archipielago {
-    background:
-        linear-gradient(135deg, #1c6c91, #50b8c9);
+    background-image: url("imagenes/archipielago.jpg");
 }
 
 .estiliza {
-    background:
-        linear-gradient(135deg, #b65f86, #e5a5bb);
+    background-image: url("imagenes/estiliza.jpg");
 }
 
 .libritos {
-    background:
-        linear-gradient(135deg, #a97945, #e1bd79);
+    background-image: url("imagenes/libritos.jpg");
 }
 
 .cantina {
-    background:
-        linear-gradient(135deg, #d47b32, #f0c36b);
+    background-image: url("imagenes/cantina.jpg");
 }
 
 .oso {
-    background:
-        linear-gradient(135deg, #83c6e8, #e9f8ff);
+    background-image: url("imagenes/oso-polar.jpg");
 }
 
 .c {
-    background:
-        linear-gradient(135deg, #303030, #858585);
+    background-image: url("imagenes/proyectos-c.jpg");
 }
 
 .san-telmo {
-    background:
-        linear-gradient(135deg, #22704b, #79bd72);
+    background-image: url("imagenes/san-telmo.jpg");
 }
 
 .contenido-proyecto {
