@@ -6,23 +6,25 @@
 
 body {
     font-family: Arial, sans-serif;
-
     min-height: 100vh;
 
-    background:
-        radial-gradient(circle at center, #25322f 0%, #101513 45%, #050706 100%);
+    background: radial-gradient(
+        circle at center,
+        #25322f 0%,
+        #101513 45%,
+        #050706 100%
+    );
 
     color: white;
-
     overflow-x: hidden;
 }
+
+/* HEADER */
 
 header {
     width: 90%;
     margin: 30px auto 0;
-
     text-align: center;
-
     padding: 20px;
 
     position: relative;
@@ -32,23 +34,20 @@ header {
 header h1 {
     font-size: 42px;
     letter-spacing: 4px;
-
     color: white;
 
-    text-shadow:
-        0 0 10px rgba(255,255,255,0.2);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 header p {
     margin-top: 10px;
-
     color: #bdbdbd;
-
     font-size: 16px;
 }
 
-.contenedor-carrusel {
+/* CARRUSEL */
 
+.contenedor-carrusel {
     width: 100%;
     height: 570px;
 
@@ -57,12 +56,10 @@ header p {
     justify-content: center;
 
     position: relative;
-
     overflow: hidden;
 }
 
 .carrusel {
-
     width: 100%;
     height: 500px;
 
@@ -73,37 +70,35 @@ header p {
     justify-content: center;
 }
 
-.proyecto {
+/* TARJETAS */
 
+.proyecto {
     position: absolute;
 
     width: 280px;
     height: 420px;
 
     background: #eeeeee;
-
-    color: #111;
+    color: #111111;
 
     border-radius: 18px;
-
     overflow: hidden;
 
     cursor: pointer;
 
-    box-shadow:
-        0 20px 50px rgba(0,0,0,0.6);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
 
     transition:
         transform 0.5s ease,
         opacity 0.5s ease,
-        filter 0.5s ease,
-        z-index 0.5s;
+        filter 0.5s ease;
 
     user-select: none;
 }
 
-.imagen-proyecto {
+/* IMAGEN */
 
+.imagen-proyecto {
     width: 100%;
     height: 245px;
 
@@ -112,50 +107,52 @@ header p {
     justify-content: center;
 
     position: relative;
-
     overflow: hidden;
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-.imagen-proyecto::after {
+/* EFECTO OSCURO SOBRE LA IMAGEN */
 
+.imagen-proyecto::after {
     content: "";
 
     position: absolute;
-
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     background: linear-gradient(
         transparent 50%,
-        rgba(0,0,0,0.4)
+        rgba(0, 0, 0, 0.4)
     );
 }
 
+/* TEXTO SOBRE LA IMAGEN */
 
 .imagen-proyecto span {
-
     position: relative;
-
     z-index: 2;
 
     color: white;
-
     font-size: 25px;
-
     font-weight: bold;
-
     text-align: center;
 
-    text-shadow:
-        0 2px 8px black;
+    text-shadow: 0 2px 8px black;
 }
-/*
+
+/* =========================
+   IMÁGENES DE LOS PROYECTOS
+   ========================= */
+
 .colfi {
-agregar estilos a la imagen.
+    background-image: url("imagenes41/colfi-logo.jpg");
 }
-*/
+
 .archipielago {
     background-image: url("imagenes/archipielago.jpg");
 }
@@ -184,113 +181,94 @@ agregar estilos a la imagen.
     background-image: url("imagenes/san-telmo.jpg");
 }
 
-.contenido-proyecto {
+/* CONTENIDO */
 
+.contenido-proyecto {
     padding: 20px;
 }
 
 .contenido-proyecto h2 {
-
     font-size: 21px;
-
     margin-bottom: 10px;
-
     color: #171717;
 }
 
 .contenido-proyecto p {
-
     font-size: 14px;
-
-    color: #555;
-
+    color: #555555;
     line-height: 1.4;
 }
 
-.proyecto.centro {
+/* PROYECTO CENTRAL */
 
-    transform:
-        translateX(0)
-        scale(1.12);
+.proyecto.centro {
+    transform: translateX(0) scale(1.12);
 
     opacity: 1;
-
     z-index: 5;
 
     filter: brightness(1);
-
 }
+
+/* PROYECTO IZQUIERDO */
 
 .proyecto.izquierda {
-
-    transform:
-        translateX(-300px)
-        scale(0.88);
+    transform: translateX(-300px) scale(0.88);
 
     opacity: 0.75;
-
     z-index: 3;
 
     filter: brightness(0.7);
 }
+
+/* PROYECTO DERECHO */
 
 .proyecto.derecha {
-
-    transform:
-        translateX(300px)
-        scale(0.88);
+    transform: translateX(300px) scale(0.88);
 
     opacity: 0.75;
-
     z-index: 3;
 
     filter: brightness(0.7);
 }
 
-.proyecto.muy-izquierda {
+/* MUY IZQUIERDA */
 
-    transform:
-        translateX(-520px)
-        scale(0.7);
+.proyecto.muy-izquierda {
+    transform: translateX(-520px) scale(0.7);
 
     opacity: 0.25;
-
     z-index: 1;
 
     filter: brightness(0.5);
 }
 
+/* MUY DERECHA */
 
 .proyecto.muy-derecha {
-
-    transform:
-        translateX(520px)
-        scale(0.7);
+    transform: translateX(520px) scale(0.7);
 
     opacity: 0.25;
-
     z-index: 1;
 
     filter: brightness(0.5);
 }
 
+/* FLECHAS */
+
 .flecha {
-
     position: absolute;
-
     z-index: 20;
 
     width: 55px;
     height: 55px;
 
     border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
-    border: 1px solid rgba(255,255,255,0.3);
-
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 
     color: white;
-
     font-size: 25px;
 
     cursor: pointer;
@@ -299,86 +277,70 @@ agregar estilos a la imagen.
 }
 
 .flecha:hover {
-
     background: white;
-
     color: black;
-
     transform: scale(1.1);
 }
 
-
 .flecha.izquierda {
-
     left: 40px;
 }
 
 .flecha.derecha {
-
     right: 40px;
 }
 
+/* INDICADORES */
+
 .indicadores {
-
     display: flex;
-
     justify-content: center;
 
     gap: 8px;
-
     margin-top: 5px;
 }
 
 .indicador {
-
     width: 9px;
     height: 9px;
 
     border-radius: 50%;
-
-    background: #555;
+    background: #555555;
 
     cursor: pointer;
-
     transition: 0.3s;
 }
 
 .indicador.activo {
-
     width: 25px;
 
     border-radius: 10px;
-
     background: white;
 }
 
+/* DETALLE */
+
 #detalle {
-
     width: 90%;
-
     max-width: 1000px;
 
     margin: 40px auto;
-
     padding-bottom: 50px;
 }
 
-
 .oculto {
-
     display: none;
 }
 
+/* BOTÓN VOLVER */
 
 .volver {
-
     border: none;
 
     padding: 13px 22px;
 
     background: white;
-
-    color: #111;
+    color: #111111;
 
     font-weight: bold;
 
@@ -392,84 +354,64 @@ agregar estilos a la imagen.
 }
 
 .volver:hover {
-
     transform: translateX(-5px);
-
     background: #dddddd;
 }
 
-
 .detalle-contenido {
-
     text-align: center;
 }
 
-
 #tituloProyecto {
-
     font-size: 50px;
-
     letter-spacing: 3px;
-
     margin-bottom: 25px;
 }
 
-
 #descripcionProyecto {
-
     max-width: 700px;
 
     margin: auto;
-
     padding: 20px;
 
     color: #cccccc;
 
     font-size: 18px;
-
     line-height: 1.6;
 
-    background: rgba(255,255,255,0.08);
+    background: rgba(255, 255, 255, 0.08);
 
     border-radius: 12px;
 }
 
-.recursos {
+/* RECURSOS */
 
+.recursos {
     margin-top: 50px;
 }
 
 .recursos h2 {
-
     margin-bottom: 25px;
-
     font-size: 24px;
 }
 
 .botones {
-
     display: flex;
-
     justify-content: center;
 
     flex-wrap: wrap;
-
     gap: 15px;
 }
 
-
 .botones a {
-
     display: block;
 
     width: 210px;
-
     padding: 15px 20px;
 
     border-radius: 10px;
 
     text-decoration: none;
-
     color: white;
 
     font-weight: bold;
@@ -477,135 +419,89 @@ agregar estilos a la imagen.
     transition: 0.2s;
 }
 
-
 .botones a:hover {
-
     transform: translateY(-4px);
-
     filter: brightness(1.1);
 }
 
-
 .github {
-
     background-color: #333333;
 }
 
 .documentacion {
-
     background-color: #d4ad32;
 }
 
 .infografias {
-
     background-color: #d64b7c;
 }
 
 .videos {
-
     background-color: #e66e32;
 }
 
 @media (max-width: 800px) {
 
     header h1 {
-
         font-size: 28px;
-
         letter-spacing: 2px;
     }
 
     header p {
-
         font-size: 13px;
     }
 
-
     .contenedor-carrusel {
-
         height: 520px;
     }
 
-
     .proyecto {
-
         width: 240px;
-
         height: 380px;
     }
 
-
     .imagen-proyecto {
-
         height: 210px;
     }
 
-
     .proyecto.centro {
-
-        transform:
-            translateX(0)
-            scale(1);
+        transform: translateX(0) scale(1);
     }
-
 
     .proyecto.izquierda {
-
-        transform:
-            translateX(-170px)
-            scale(0.75);
-
+        transform: translateX(-170px) scale(0.75);
         opacity: 0.3;
     }
-
 
     .proyecto.derecha {
-
-        transform:
-            translateX(170px)
-            scale(0.75);
-
+        transform: translateX(170px) scale(0.75);
         opacity: 0.3;
     }
-
 
     .proyecto.muy-izquierda,
     .proyecto.muy-derecha {
-
         opacity: 0;
     }
 
-
     .flecha {
-
         width: 45px;
-
         height: 45px;
     }
 
-
     .flecha.izquierda {
-
         left: 10px;
     }
 
-
     .flecha.derecha {
-
         right: 10px;
     }
 
-
     #tituloProyecto {
-
         font-size: 32px;
     }
 
-
     .botones {
-
         flex-direction: column;
-
         align-items: center;
     }
 }
