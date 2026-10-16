@@ -148,13 +148,13 @@ function abrirProyecto(nombre) {
         <a href="#" class="github" target="_blank">💻 GitHub</a>
         <a href="#" class="documentacion">📄 Documentación</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="San-Telmo-Verde.up.railway.app" class="pagina-web">🌐 Pagina Web</a>
+        <a href="https://san-telmo-verde.up.railway.app/" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
       else if (nombre === "SURCO APRENDE") {
         desc = "Proyecto sobre la música y crear ritmos";
         links = `
-        <a href="#" class="github" target="_blank">💻 GitHub</a>
+        <a href="https://github.com/othercat342/surco_aprende" class="github" target="_blank">💻 GitHub</a>
         <a href="#" class="documentacion">📄 Documentación</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
         <a href="https://surcoaprende-production.up.railway.app/#inicio" class="pagina-web">🌐 Pagina Web</a>
