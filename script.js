@@ -118,9 +118,7 @@ function abrirProyecto(nombre) {
     else if (nombre === "LIBRITOS") {
         desc = "App para ayudar a compañeros a aprobar las materias.";
         links = `
-        <a href="#" class="github" target="_blank">💻 GitHub</a>
-        <a href="#" class="documentacion">📄 Documentación</a>
-        <a href="#" class="infografias">🖼️ Infografía</a>
+        <a href="https://docs.google.com/document/d/1LR_h7P7CpwhvGJofPSxJHv6cO-6NLcYNdD7IeDOkJAY/edit?tab=t.0" class="documentacion">📄 Documentación</a>
         <a href="https://libritop.github.io/Librito/" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
@@ -146,8 +144,7 @@ function abrirProyecto(nombre) {
         desc = "Proyecto de sustentabilidad y espacios verdes.";
         links = `
         <a href="https://github.com/othercat342/san-telmo-verde" class="github" target="_blank">💻 GitHub</a>
-        <a href="#" class="documentacion">📄 Documentación</a>
-        <a href="#" class="infografias">🖼️ Infografía</a>
+        <a href="https://docs.google.com/document/d/15Vlc5mUQ0JTHhZWTYIA4j20UWsm9PNBZ-xjo56vSiJg/edit?tab=t.0" class="documentacion">📄 Documentación</a>
         <a href="https://san-telmo-verde.up.railway.app/" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
@@ -155,8 +152,6 @@ function abrirProyecto(nombre) {
         desc = "Proyecto sobre la música y crear ritmos";
         links = `
         <a href="https://github.com/othercat342/surco_aprende" class="github" target="_blank">💻 GitHub</a>
-        <a href="#" class="documentacion">📄 Documentación</a>
-        <a href="#" class="infografias">🖼️ Infografía</a>
         <a href="https://surcoaprende-production.up.railway.app/#inicio" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
