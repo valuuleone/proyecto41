@@ -8,12 +8,17 @@ body {
     font-family: Arial, sans-serif;
     min-height: 100vh;
 
-    background: radial-gradient(
-        circle at center,
-        #25322f 0%,
-        #101513 45%,
-        #050706 100%
-    );
+    background-image:
+        linear-gradient(
+            rgba(5, 7, 6, 0.65),
+            rgba(5, 7, 6, 0.80)
+        ),
+        url("imagenes/tecnicaa.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     color: white;
     overflow-x: hidden;
@@ -108,8 +113,7 @@ header p {
 
     position: relative;
     overflow: hidden;
-
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -150,35 +154,28 @@ header p {
    ========================= */
 
 .colfi {
-    background-image: url("imagenes41/colfi-logo.jpg");
+    background-image: url("imagenes/colfi.jpg");
 }
 
 .archipielago {
-    background-image: url("imagenes/archipielago.jpg");
+    background-image: url("imagenes/El-Archipielago.jpg");
 }
-
-.estiliza {
-    background-image: url("imagenes/estiliza.jpg");
-}
-
 .libritos {
     background-image: url("imagenes/libritos.jpg");
 }
 
 .cantina {
-    background-image: url("imagenes/cantina.jpg");
+    background-image: url("imagenes/nuestracantina.jpg");
 }
 
 .oso {
-    background-image: url("imagenes/oso-polar.jpg");
+    background-image: url("imagenes/osopolar.jpg");
 }
-
-.c {
-    background-image: url("imagenes/proyectos-c.jpg");
-}
-
 .san-telmo {
-    background-image: url("imagenes/san-telmo.jpg");
+    background-image: url("imagenes/SanTelmo.jpg");
+}
+.surco-aprende {
+    background-image: url("imagenes/surcoaprende.jpg");
 }
 
 /* CONTENIDO */
