@@ -136,9 +136,9 @@ function abrirProyecto(nombre) {
     else if (nombre === "OSO POLAR") {
         desc = "Juego sobre el reciclaje y para cuidar a polo.";
         links = `
-        <a href="#" class="github" target="_blank">💻 GitHub</a>
+        <a href="https://github.com/Lolo399-beep/EcoPulse2" class="github" target="_blank">💻 GitHub</a>
         <a href="https://ecopulse2-production.up.railway.app/#mapa" class="mapa-tapitas">🗺️ Mapa de tapitas</a>
-        <a href="#" class="infografias">🖼️ Infografía</a>
+        <a href="https://docs.google.com/document/d/1zRS4Fa2MeJ9rye4WjNLyftYZRMgj2puOYZcq_x3zb_A/edit?tab=t.0" class="documentacion">📄 Documentación</a>
         <a href="https://ecopulse2-production.up.railway.app/#juego" class="juego">🎮 Juego</a>
 `;
     }
