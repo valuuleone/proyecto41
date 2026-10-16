@@ -93,7 +93,7 @@ function abrirProyecto(nombre) {
         links = `
             <a href="https://github.com/gr1ll0o/project-colfi" class="github" target="_blank">💻 GitHub</a>
             <a href="https://docs.google.com/document/d/1PVfnwmBnhD6HTRc6OsHt6ldV3749Nwtq/edit" class="documentacion">📄 Documentación</a>
-            <a href="#" class="infografias">🖼️ Infografía</a>
+            <a href="https://col-fi.netlify.app/" class="pagina-web">🌐Pagina Web</a>
             <a href="https://www.youtube.com/@proyecto-colfi"class="videos"target="_blank">🎥 Video</a>
         `;
     }
@@ -103,7 +103,7 @@ function abrirProyecto(nombre) {
         <a href="https://github.com/Thiago-Campobello/Archipielago-Page" class="github" target="_blank">💻 GitHub</a>
         <a href="https://docs.google.com/document/d/18Fg4He4ZZ8E8c6ndEebvp549EcrE2yuDHbqqPFAUO8A/edit?tab=t.0" class="documentacion">📄 Documentación</a>
         <a href="https://www.canva.com/design/DAHYIM3VGlo/S9uICLuVTbobadBPxOsVjw/edit?ui=eyJFIjp7IkE_IjoiTiIsIlMiOiJBQUZqLXJUTzlwNCIsIlQiOjN9fQ" class="infografias">🖼️ Infografía</a>
-        <a href="https://thiago-campobello.github.io/Archipielago-Page/ElArchipielago.html" class="Pagina Web">🌐 Pagina Web</a>
+        <a href="https://thiago-campobello.github.io/Archipielago-Page/ElArchipielago.html" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
     else if (nombre === "ESCAPA DE LA 35") {
@@ -112,7 +112,7 @@ function abrirProyecto(nombre) {
         <a href="#" class="github" target="_blank">💻 GitHub</a>
         <a href="https://docs.google.com/document/d/1GFsjViJiPnZ1obTiey-AY4Ti4-jejEsQxB0f-Myzk28/edit?tab=t.5s3qu5oj72wp#heading=h.fq5pdyy8vqjy" class="documentacion">📄 Documentación</a>
         <a href="https://drive.google.com/file/d/1Qh774u_Km4Vobdn-40ejYh17-6evzXPF/view" class="infografias">🖼️ Infografía</a>
-        <a href="#" class="Pagina Web">🌐 Pagina Web</a>
+        <a href="#" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
     else if (nombre === "LIBRITOS") {
@@ -121,7 +121,7 @@ function abrirProyecto(nombre) {
         <a href="#" class="github" target="_blank">💻 GitHub</a>
         <a href="#" class="documentacion">📄 Documentación</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="https://libritop.github.io/Librito/" class="Pagina web">🌐 Pagina Web</a>
+        <a href="https://libritop.github.io/Librito/" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
     else if (nombre === "NUESTRA CANTINA") {
@@ -130,16 +130,16 @@ function abrirProyecto(nombre) {
         <a href="https://github.com/Ruskov33/Proyecto-Cantina" class="github" target="_blank">💻 GitHub</a>
         <a href="https://docs.google.com/document/d/1HbkqlRHTCQFXY9NXJZmbTSTmGtfUdJSPKrRs6MzrYfc/edit?pli=1&tab=t.0" class="documentacion">📄 Documentación</a>
         <a href="https://drive.google.com/file/d/11e7S_RpJI-ZU6N3Wg-a44U3Ai47RQbaF/view?pli=1" class="infografias">🖼️ Infografía</a>
-        <a href="https://nuestra-cantina.netlify.app/Im%C3%A1genes/Cantina.mp4" class="Video">🎥 Video</a>
+        <a href="https://nuestra-cantina.netlify.app/Im%C3%A1genes/Cantina.mp4" class="videos">🎥 Video</a>
 `;
     }
     else if (nombre === "OSO POLAR") {
         desc = "Juego sobre el reciclaje y para cuidar a polo.";
         links = `
         <a href="#" class="github" target="_blank">💻 GitHub</a>
-        <a href="https://ecopulse2-production.up.railway.app/#mapa" class="Mapa de tapitas">🗺️ Mapa de tapitas</a>
+        <a href="https://ecopulse2-production.up.railway.app/#mapa" class="mapa-tapitas">🗺️ Mapa de tapitas</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="https://ecopulse2-production.up.railway.app/#juego" class="Juego">🎮 Juego</a>
+        <a href="https://ecopulse2-production.up.railway.app/#juego" class="juego">🎮 Juego</a>
 `;
     }
     else if (nombre === "SAN TELMO VERDE") {
@@ -148,7 +148,7 @@ function abrirProyecto(nombre) {
         <a href="#" class="github" target="_blank">💻 GitHub</a>
         <a href="#" class="documentacion">📄 Documentación</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="San-Telmo-Verde.up.railway.app" class="Pagina Web">🌐 Pagina Web</a>
+        <a href="San-Telmo-Verde.up.railway.app" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
       else if (nombre === "SURCO APRENDE") {
@@ -157,7 +157,7 @@ function abrirProyecto(nombre) {
         <a href="#" class="github" target="_blank">💻 GitHub</a>
         <a href="#" class="documentacion">📄 Documentación</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="https://surcoaprende-production.up.railway.app/#inicio" class="Pagina Web">🌐 Pagina Web</a>
+        <a href="https://surcoaprende-production.up.railway.app/#inicio" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
     document.getElementById("descripcionProyecto")
