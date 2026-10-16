@@ -145,7 +145,7 @@ function abrirProyecto(nombre) {
     else if (nombre === "SAN TELMO VERDE") {
         desc = "Proyecto de sustentabilidad y espacios verdes.";
         links = `
-        <a href="#" class="github" target="_blank">💻 GitHub</a>
+        <a href="https://github.com/othercat342/san-telmo-verde" class="github" target="_blank">💻 GitHub</a>
         <a href="#" class="documentacion">📄 Documentación</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
         <a href="https://san-telmo-verde.up.railway.app/" class="pagina-web">🌐 Pagina Web</a>
