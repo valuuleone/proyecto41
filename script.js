@@ -109,10 +109,10 @@ function abrirProyecto(nombre) {
     else if (nombre === "ESCAPA DE LA 35") {
         desc = "Sistema educativo interactivo por islas.";
         links = `
-        <a href="#" class="github" target="_blank">💻 GitHub</a>
+        <a href="https://github.com/AlvarezPaul/Juego35" class="github" target="_blank">💻 GitHub</a>
         <a href="https://docs.google.com/document/d/1GFsjViJiPnZ1obTiey-AY4Ti4-jejEsQxB0f-Myzk28/edit?tab=t.5s3qu5oj72wp#heading=h.fq5pdyy8vqjy" class="documentacion">📄 Documentación</a>
         <a href="https://drive.google.com/file/d/1Qh774u_Km4Vobdn-40ejYh17-6evzXPF/view" class="infografias">🖼️ Infografía</a>
-        <a href="#" class="pagina-web">🌐 Pagina Web</a>
+        <a href="https://alvarezpaul.github.io/Juego35/" class="pagina-web">🌐 Pagina Web</a>
 `;
     }
     else if (nombre === "LIBRITOS") {
