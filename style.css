@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +41,6 @@ header h1 {
     font-size: 42px;
     letter-spacing: 4px;
     color: white;
-
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -101,11 +101,12 @@ header p {
     user-select: none;
 }
 
-/* IMAGEN */
+/* IMÁGENES: AJUSTADAS A LA TARJETA */
 
 .imagen-proyecto {
     width: 100%;
     height: 245px;
+    flex-shrink: 0;
 
     display: flex;
     align-items: center;
@@ -113,7 +114,8 @@ header p {
 
     position: relative;
     overflow: hidden;
-    background-size: 100% 100%;
+
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -124,10 +126,7 @@ header p {
     content: "";
 
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
 
     background: linear-gradient(
         transparent 50%,
@@ -149,9 +148,7 @@ header p {
     text-shadow: 0 2px 8px black;
 }
 
-/* =========================
-   IMÁGENES DE LOS PROYECTOS
-   ========================= */
+/* IMÁGENES DE LOS PROYECTOS */
 
 .colfi {
     background-image: url("imagenes/colfi.jpg");
@@ -160,6 +157,7 @@ header p {
 .archipielago {
     background-image: url("imagenes/El-Archipielago.jpg");
 }
+
 .libritos {
     background-image: url("imagenes/libritos.jpg");
 }
@@ -171,9 +169,11 @@ header p {
 .oso {
     background-image: url("imagenes/osopolar.jpg");
 }
+
 .san-telmo {
     background-image: url("imagenes/SanTelmo.jpg");
 }
+
 .surco-aprende {
     background-image: url("imagenes/surcoaprende.jpg");
 }
@@ -437,6 +437,8 @@ header p {
     background-color: #e66e32;
 }
 
+/* CELULARES */
+
 @media (max-width: 800px) {
 
     header h1 {
@@ -458,7 +460,9 @@ header p {
     }
 
     .imagen-proyecto {
+        width: 100%;
         height: 210px;
+        flex-shrink: 0;
     }
 
     .proyecto.centro {
