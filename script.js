@@ -101,18 +101,9 @@ function abrirProyecto(nombre) {
         desc = "Sistema educativo interactivo por islas.";
         links = `
         <a href="#" class="github" target="_blank">💻 GitHub</a>
-        <a href="#" class="documentacion">📄 Documentación</a>
-        <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="#" class="videos">🎥 Video</a>
-`;
-    }
-    else if (nombre === "ESTILIZA TU VIDA") {
-        desc = "Proyecto sobre hábitos y organización personal.";
-        links = `
-        <a href="#" class="github" target="_blank">💻 GitHub</a>
-        <a href="#" class="documentacion">📄 Documentación</a>
-        <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="#" class="videos">🎥 Video</a>
+        <a href="https://docs.google.com/document/d/18Fg4He4ZZ8E8c6ndEebvp549EcrE2yuDHbqqPFAUO8A/edit?tab=t.0" class="documentacion">📄 Documentación</a>
+        <a href="https://www.canva.com/design/DAHYIM3VGlo/S9uICLuVTbobadBPxOsVjw/edit?ui=eyJFIjp7IkE_IjoiTiIsIlMiOiJBQUZqLXJUTzlwNCIsIlQiOjN9fQ" class="infografias">🖼️ Infografía</a>
+        <a href="#" class="Pagina Web">🎥 Pagina Web</a>
 `;
     }
     else if (nombre === "LIBRITOS") {
@@ -121,7 +112,7 @@ function abrirProyecto(nombre) {
         <a href="#" class="github" target="_blank">💻 GitHub</a>
         <a href="#" class="documentacion">📄 Documentación</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="#" class="videos">🎥 Video</a>
+        <a href="#" class="Pagina web">🎥 Pagina Web</a>
 `;
     }
     else if (nombre === "NUESTRA CANTINA") {
@@ -137,18 +128,9 @@ function abrirProyecto(nombre) {
         desc = "Proyecto sobre cambio climático y conciencia ambiental.";
         links = `
         <a href="#" class="github" target="_blank">💻 GitHub</a>
-        <a href="#" class="documentacion">📄 Documentación</a>
+        <a href="https://ecopulse2-production.up.railway.app/#mapa" class="Mapa de tapitas">📄 Mapa de tapitas</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="#" class="videos">🎥 Video</a>
-`;
-    }
-    else if (nombre === "PROYECTOS EN C") {
-        desc = "Programas realizados en lenguaje C.";
-        links = `
-        <a href="#" class="github" target="_blank">💻 GitHub</a>
-        <a href="#" class="documentacion">📄 Documentación</a>
-        <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="#" class="videos">🎥 Video</a>
+        <a href="https://ecopulse2-production.up.railway.app/#juego" class="Juego">🎥 Juego</a>
 `;
     }
     else if (nombre === "SAN TELMO VERDE") {
@@ -157,7 +139,16 @@ function abrirProyecto(nombre) {
         <a href="#" class="github" target="_blank">💻 GitHub</a>
         <a href="#" class="documentacion">📄 Documentación</a>
         <a href="#" class="infografias">🖼️ Infografía</a>
-        <a href="#" class="videos">🎥 Video</a>
+        <a href="San-Telmo-Verde.up.railway.app" class="Pagina Web">🎥 Pagina Web</a>
+`;
+    }
+      else if (nombre === "SURCO APRENDE") {
+        desc = "Proyecto de notas musicales";
+        links = `
+        <a href="#" class="github" target="_blank">💻 GitHub</a>
+        <a href="#" class="documentacion">📄 Documentación</a>
+        <a href="#" class="infografias">🖼️ Infografía</a>
+        <a href="https://surcoaprende-production.up.railway.app/#inicio" class="Pagina Web">🎥 Pagina Web</a>
 `;
     }
     document.getElementById("descripcionProyecto")
